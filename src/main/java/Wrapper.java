@@ -1,4 +1,12 @@
 interface Wrapper {
 
-    public int add(int a, int b);
+    public void setLength(int length);
+
+    public void setBreadth(int breadth);
+
+    public int getLength();
+
+    public int getBreadth();
+
+    public int getArea();
 }
