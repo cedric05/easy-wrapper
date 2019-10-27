@@ -7,7 +7,7 @@ import java.net.URLClassLoader;
 class App {
 
     public static void main(String args[]) throws Exception {
-        URL[] urls = new URL[] { new File("./lib.jar").toURL() };
+        URL[] urls = new URL[] { new File("./Library/build/libs/Library.jar").toURL() };
         URLClassLoader urlClassLoader = new URLClassLoader(urls);
         Class appClass = urlClassLoader.loadClass("Library");
         Object obj = appClass.newInstance();
